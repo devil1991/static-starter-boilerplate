@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'gotham-htf-bold';
+  src: url("{{ 'gotham-htf-bold.woff2' | asset_url }}") format('woff2'),
+       url("{{ 'gotham-htf-bold.woff' | asset_url }}") format('woff'),
+       url("{{ 'gotham-htf-bold.ttf' | asset_url }}") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

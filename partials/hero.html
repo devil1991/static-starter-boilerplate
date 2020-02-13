@@ -1,0 +1,20 @@
+<div class="hero relative">
+  <div class="hero-wrapper relative ratio">
+    {{> image mod_src="/images/hero-canvas.jpg" mod_fit="cover" }}
+
+    <div class="hero-content" data-aos="fade-up" data-aos-delay="800">
+      <img src="/images/pacman.png" alt="" class="pacman">
+      <h2 class="h1 white bold">{{{ header.title }}}</h2>
+    </div>
+  </div>
+  <div class="hero-device ratio" data-aos="fade-up" data-aos-delay="300">
+    {{> image mod_src="/images/iphone-device.png" mod_fit="contain" }}
+
+    <a data-aos-delay="800" target="_blank" href="https://tfull.bancaprofilo.it/tinabafull/app/#/signup" class="btn btn-light">
+      <span>Apri un conto</span>
+      <span class="icon">
+        <img src="/images/new-tab-icon@3x.png" alt="">
+      </span>
+    </a>
+  </div>
+</div>

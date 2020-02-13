@@ -1,0 +1,85 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  position: relative;
+  z-index: 20;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: all var(--transition-default), visibility var(--transition-default);
+  visibility: hidden;
+
+  .is-processing &,
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:before {
+    animation: spin 1s infinite linear;
+  }
+
+  &:after {
+    animation: spin 1s infinite ease;
+    animation-delay: .2s;
+  }
+
+  &:before,
+  &:after {
+    @mixin full-cover;
+    content: '';
+    border: 2px solid transparent;
+    border-right-color: antiquewhite;
+    border-right-color: antiquewhite;
+    border-radius: 50%;
+
+    .form-combo--mobile &,
+    .button-price--solid & {
+      border-top-color: deeppink;
+      border-right-color: deeppink;
+    }
+  }
+}
+
+.spinner--lg {
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  width: 60px;
+  height: 60px;
+
+  &:before,
+  &:after {
+    border-width: 4px;
+  }
+}
+
+.spinner--sm {
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.spinner--abs {
+  position: absolute;
+}
+
+.spinner--fix {
+  position: fixed;
+}
+
+.spinner--button {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}

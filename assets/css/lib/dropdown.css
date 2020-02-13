@@ -1,0 +1,24 @@
+/* Dropdown */
+.dropdown {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  .dropdown__icon {
+    width: 10px;
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.dropdown__el {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+  width: 100%;
+}

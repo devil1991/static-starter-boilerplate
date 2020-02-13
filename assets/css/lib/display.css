@@ -1,0 +1,119 @@
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.static {
+  position: static;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+.block--xxs {
+  @media (--xxs) {
+    display: block;
+  }
+}
+.block--xs {
+  @media (--xs) {
+    display: block;
+  }
+}
+.block--s {
+  @media (--s) {
+    display: block;
+  }
+}
+.block--ms {
+  @media (--ms) {
+    display: block;
+  }
+}
+.block--m {
+  @media (--m) {
+    display: block;
+  }
+}
+.block--ml {
+  @media (--ml) {
+    display: block;
+  }
+}
+.block--l {
+  @media (--l) {
+    display: block;
+  }
+}
+.block--xl {
+  @media (--xl) {
+    display: block;
+  }
+}
+.block--xxl {
+  @media (--xxl) {
+    display: block;
+  }
+}
+
+.hide {
+  display: none;
+}
+.hide--xxs {
+  @media (--xxs) {
+    display: none;
+  }
+}
+.hide--xs {
+  @media (--xs) {
+    display: none;
+  }
+}
+.hide--s {
+  @media (--s) {
+    display: none;
+  }
+}
+.hide--ms {
+  @media (--ms) {
+    display: none;
+  }
+}
+.hide--m {
+  @media (--m) {
+    display: none;
+  }
+}
+.hide--ml {
+  @media (--ml) {
+    display: none;
+  }
+}
+.hide--l {
+  @media (--l) {
+    display: none;
+  }
+}
+.hide--xl {
+  @media (--xl) {
+    display: none;
+  }
+}
+.hide--xxl {
+  @media (--xxl) {
+    display: none;
+  }
+}

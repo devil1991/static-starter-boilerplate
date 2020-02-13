@@ -1,0 +1,278 @@
+%font-gotham-htf-bold {
+  font-family: 'gotham-htf-bold', arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+%font-courier {
+  font-family: 'courier', arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+}
+%font-aktiv-grotesk {
+  font-family: 'aktiv-grotesk';
+  font-weight: normal;
+  line-height: 1.2;
+}
+%font-lora {
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  line-height: 1.2;
+  src: url ('https://fonts.googleapis.com/css?family=Lora" rel="stylesheet');
+}
+
+/* Global */
+body {
+  @extend %font-aktiv-grotesk;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+%h1,
+.h1 {
+  @extend %font-aktiv-grotesk;
+  @mixin font-size 30px, 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.95px;
+
+  @media (--l) {
+    @mixin font-size 42px, 52px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+  }
+}
+%h2,
+.h2 {
+  @extend %font-aktiv-grotesk;
+  @mixin font-size 26px, 33px;
+
+  @media (--l) {
+    @mixin font-size 42px, 38px;
+
+  }
+
+}
+%h3,
+.h3 {
+  @extend %font-aktiv-grotesk;
+  @mixin font-size 19px, 25px;
+
+  @media (--l) {
+    @mixin font-size 22px, 28px;
+  }
+}
+%h4,
+.h4 {
+  @extend %font-aktiv-grotesk;
+  @mixin font-size 13px, 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  @media (--l) {
+    @mixin font-size 22px, 36px;
+    letter-spacing: 0.74px;
+  }
+}
+%h5,
+.h5 {
+  @extend %font-aktiv-grotesk;
+  @mixin font-size 10px, 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  @media (--l) {
+    @mixin font-size 16px, 19px;
+    letter-spacing: 0.74px;
+  }
+}
+
+/* Paragraphs */
+%p1,
+.p1 {
+  @extend %font-aktiv-grotesk;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+  @media (--l) {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+}
+%p2,
+.p2 {
+  @extend %font-aktiv-grotesk;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 19px;
+  @media (--l) {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+}
+%p3,
+.p3 {
+  @extend %font-aktiv-grotesk;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 17px;
+  @media (--l) {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 19px;
+  }
+}
+
+/* Blockquote */
+%bq,
+.bq {
+  @extend %font-aktiv-grotesk;
+  font-size: 20px;
+  line-height: 1.4;
+
+  @media (--xs) {
+    font-size: 28px;
+  }
+}
+
+/* Links */
+%a1,
+.a1,
+.link {
+  cursor: pointer;
+  opacity: 1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+%a2,
+.a2 {
+  text-decoration: underline;
+}
+%a3,
+.a3 {
+  @extend %p2;
+  display: inline-block;
+  margin-left: -6px;
+  padding: 0 6px;
+  position: relative;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 0;
+  }
+}
+.no-touch {
+  %a1,
+  .a1 {
+    transition: opacity var(--speed) var(--ease);
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  %a2,
+  .a2 {
+    &::after {
+      transition: width var(--speed) var(--ease);
+    }
+
+    &:hover {
+      &::after {
+        width: calc(100% - 10px);
+      }
+    }
+  }
+
+  %a3,
+  .a3 {
+    &::before {
+      transition: width var(--speed) var(--ease);
+    }
+
+    &:hover {
+      &::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+.link--withicon {
+  align-items: center;
+  display: inline-flex;
+  .icon {
+    height: 8px;
+    width: 15px;
+    margin: 0 5px;
+  }
+}
+
+/* Horizontal Rule */
+%hr,
+.hr {
+  background-color: var(--black);
+  border: none;
+  display: block;
+  height: 1px;
+  opacity: 0.2;
+  width: 100%;
+}
+
+/* Styles */
+.italic {
+  font-style: italic;
+}
+.light {
+  font-weight: 100;
+}
+.medium {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+.bolder {
+  font-weight: 900;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.underline {
+  text-decoration: underline;
+}
+.decoration--none {
+  text-decoration: none;
+}
+.no-wrap{
+  white-space: nowrap;
+}
+.small {
+  font-size: 0.8em;
+}
+
+/* Accessibility */
+.js-link,
+.link,
+a {
+  &:focus {
+    outline: 2px solid blue;
+  }
+}

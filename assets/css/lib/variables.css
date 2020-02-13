@@ -1,0 +1,63 @@
+:root {
+  /* Breakpoints */
+  --xxxs: 320px;
+  --xxs: 445px;
+  --xs: 620px;
+  --s: 768px;
+  --ms: 840px;
+  --m: 1000px;
+  --ml: 1160px;
+  --l: 1200px;
+  --xl: 1440px;
+  --xxl: 1800px;
+
+  /* Colors */
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #d0d0d0;
+  --grey-light: #f1f1f1;
+  --grey-dark: #838383;
+  --yellow: #fdd007;
+  --red: red;
+  --blue: #0069c3;
+  --green: #008623;
+
+  --border: rgba(var(--black), 1);
+  --border-dim: rgba(var(--black), .5);
+
+  /* Transitions */
+  --duration: 0.25s;
+  --speed: 0.2s;
+  --ease: ease-in-out;
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  --transition-default: var(--duration) var(--ease);
+
+  --header-height-lg: 134px;
+  --header-height-sm: 50px;
+
+  /* Gutters */
+
+  --gutter-xxs: 20px;
+  --gutter-ms: 30px;
+  --gutter: 40px;
+
+}
+
+/* Breakpoint Queries */
+@custom-media --xxxs (min-width: 320px);
+@custom-media --xxs (min-width: 445px);
+@custom-media --xs (min-width: 620px);
+@custom-media --s (min-width: 768px);
+@custom-media --ms (min-width: 840px);
+@custom-media --m (min-width: 1000px);
+@custom-media --ml (min-width: 1160px);
+@custom-media --l (min-width: 1200px);
+@custom-media --xl (min-width: 1440px);
+@custom-media --xxl (min-width: 800px);
+
+@custom-media --xxs-max (max-width: 445px);
+@custom-media --xs-max (max-width: 620px);
+@custom-media --s-max (max-width: 768px);
+@custom-media --m-max (max-width: 1000px);
+@custom-media --l-max (max-width: 1200px);
