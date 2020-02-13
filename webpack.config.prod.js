@@ -20,7 +20,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      modules: path.resolve(__dirname, 'assets/js/modules'),
+      modules: path.resolve(__dirname, 'modules'),
       lib: path.resolve(__dirname, 'assets/js/lib')
     }
   },

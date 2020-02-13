@@ -104,7 +104,6 @@ gulp.task('postcss:prod', function() {
 
     return gulp.src(stylesheets)
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
         .pipe(postcss())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(buildpath.css))
