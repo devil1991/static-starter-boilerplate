@@ -47,6 +47,7 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "glob": "^7.1.6",
     "gulp": "^3.9.1",
     "gulp-accessibility": "^3.0.1",
     "gulp-compile-handlebars": "^0.6.1",
