@@ -21,7 +21,8 @@ module.exports = {
   resolve: {
     alias: {
       modules: path.resolve(__dirname, 'modules'),
-      lib: path.resolve(__dirname, 'assets/js/lib')
+      lib: path.resolve(__dirname, 'assets/js/lib'),
+      'vue': 'vue/dist/vue.js'
     }
   }
 };
