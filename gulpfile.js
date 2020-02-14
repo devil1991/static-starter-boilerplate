@@ -18,6 +18,7 @@ const webpack = require('webpack');
 const critical = require('critical');
 const w3cjs = require('gulp-w3cjs');
 const access = require('gulp-accessibility');
+const glob = require('glob');
 
 const buildpath = {
   main: 'public/',
@@ -164,12 +165,12 @@ gulp.task('handlebars', function () {
   var options = {
     batch: [
       'partials',
-      'modules'
-    ]
+    ].concat(glob.sync('./modules/*'))
   };
 
   var files = [
-    ['source/index.html', 'public/index.html', './data/index.json']
+    ['source/index.html', 'public/index.html', './data/index.json'],
+    ['source/about-us.html', 'public/about-us.html', './data/about-us.json']
   ];
 
   return files.forEach(function (filePair) {
