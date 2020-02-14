@@ -1,6 +1,7 @@
 const config = {
   plugins: [
     require('./postcss-tasks/postcss-module-import'),
+    require('postcss-extend'),
     require('postcss-mixins'),
     require('precss'),
     require('autoprefixer'),
@@ -9,7 +10,6 @@ const config = {
     require('postcss-strip-units'),
     require('postcss-automath'),
     require('postcss-hexrgba'),
-    require('postcss-extend')
     // require('postcss-each')
   ]
 }

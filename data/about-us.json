@@ -1,0 +1,26 @@
+{
+  "header": {
+    "title": "Tinaba estende i suoi confini <br/>per i pagamenti in tutta Asia ed Europa!"
+  },
+  "intro": {
+    "content": "Tinaba è ora una delle piattaforme di pagamento digitale più diffusa al mondo, grazie al primo accordo europeo raggiunto insieme ad Alipay, leader mondiale nel settore, e Banca Profilo."
+  },
+  "map": {
+    "title": "paesi con pagamenti disponibili tramite app"
+  },
+  "openaccount": {
+    "big": "A partire da gennaio 2020 in Giappone, e gradualmente anche negli altri paesi di Asia ed Europa, i clienti Tinaba potranno pagare tramite App direttamente dal loro profilo. Grazie all’accordo di interoperabilità raggiunto con Alipay verranno abilitati oltre 50 milioni di nuovi punti di accettazione in tutto il mondo.<br/><br/>Ti ricordiamo inoltre che con la tua carta prepagata puoi già viaggiare in completa sicurezza e pagare ovunque in tutto il mondo sul circuito Mastercard.",
+    "small": "Registrati per rimanere aggiornato sui nuovi paesi disponibili, a partire da gennaio 2020 il network di pagamenti Tinaba si estenderà in tutta Europa e Asia.",
+    "button": "Apri un conto Tinaba",
+    "button_link": "https://tfull.bancaprofilo.it/tinabafull/app/#/signup"
+  },
+  "business": {
+    "big": "Insieme ai nuovi accordi internazionali, abbiamo ampliato il circuito Tinaba permettendo agli oltre 1,2 miliardi di clienti Alipay di pagare presso i merchant aderenti sul territorio italiano. Questa espansione diventa un’occasione unica per tutti gli esercenti che vogliono sfruttare le potenzialità uniche di Tinaba e aumentare la flessibilità dei pagamenti all’interno della propria attività.",
+    "small": "Diventa un cliente Business ed entra a far parte di uno dei circuiti di pagamento più diffusi al mondo.",
+    "button": "Scopri Tinaba Business",
+    "button_link": "https://www.tinaba.bancaprofilo.it/business/"
+  },
+  "highlight": {
+    "title": "1,2 miliardi di clienti Alipay potranno pagare in Italia <br/>su tutto il circuito Tinaba presso i merchant abilitati"
+  }
+}

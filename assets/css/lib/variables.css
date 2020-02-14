@@ -12,15 +12,21 @@
   --xxl: 1800px;
 
   /* Colors */
-  --black: #000000;
+  --black: #54514d;
   --white: #ffffff;
-  --grey: #d0d0d0;
+  --grey: #ece7e0;
   --grey-light: #f1f1f1;
   --grey-dark: #838383;
   --yellow: #fdd007;
-  --red: red;
-  --blue: #0069c3;
+  --red: #e03838;
+  --blue: #44749e;
+  --light-navy: #114c6e;
+  --primary: #44749e;
   --green: #008623;
+  --off-grey: #beb8ad;
+  --stone: #9f988b;
+  --brown: #54514d;
+  --deep-brown: #65615c;
 
   --border: rgba(var(--black), 1);
   --border-dim: rgba(var(--black), .5);

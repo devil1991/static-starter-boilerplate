@@ -1,122 +1,136 @@
-%font-gotham-htf-bold {
-  font-family: 'gotham-htf-bold', arial, sans-serif;
+%font-brown {
+  font-family: 'Brown';
   font-weight: normal;
   line-height: 1.2;
-  text-transform: uppercase;
-}
-%font-courier {
-  font-family: 'courier', arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.2;
-}
-%font-aktiv-grotesk {
-  font-family: 'aktiv-grotesk';
-  font-weight: normal;
-  line-height: 1.2;
-}
-%font-lora {
-  font-family: 'Lora', serif;
-  font-weight: normal;
-  line-height: 1.2;
-  src: url ('https://fonts.googleapis.com/css?family=Lora" rel="stylesheet');
 }
 
 /* Global */
 body {
-  @extend %font-aktiv-grotesk;
+  @extend %font-brown;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
-%h1,
-.h1 {
-  @extend %font-aktiv-grotesk;
-  @mixin font-size 30px, 40px;
-  text-transform: uppercase;
-  letter-spacing: 0.95px;
+%h1, .h1 {
+  @extend %font-brown;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.06;
 
   @media (--l) {
-    @mixin font-size 42px, 52px;
-    text-transform: uppercase;
-    letter-spacing: 2.2px;
+    font-size: 42px;
+  }
+
+  &.big {
+    @media (--l) {
+      font-size: 72px;
+    }
   }
 }
+
 %h2,
 .h2 {
-  @extend %font-aktiv-grotesk;
-  @mixin font-size 26px, 33px;
+  @extend %font-brown;
+  font-weight: bold;
+  line-height: 1.17;
+  font-size: 20px;
 
   @media (--l) {
-    @mixin font-size 42px, 38px;
-
+    font-size: 36px;
   }
 
 }
+
 %h3,
 .h3 {
-  @extend %font-aktiv-grotesk;
-  @mixin font-size 19px, 25px;
+  @extend %font-brown;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: bold;
 
   @media (--l) {
-    @mixin font-size 22px, 28px;
+    font-size: 28px;
   }
 }
+
 %h4,
 .h4 {
-  @extend %font-aktiv-grotesk;
-  @mixin font-size 13px, 16px;
+  @extend %font-brown;
+  font-size: 20px;
+  line-height: 1.45;
   font-weight: bold;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
 
   @media (--l) {
-    @mixin font-size 22px, 36px;
-    letter-spacing: 0.74px;
+    font-size: 24px;
   }
 }
+
 %h5,
 .h5 {
-  @extend %font-aktiv-grotesk;
-  @mixin font-size 10px, 12px;
+  @extend %font-brown;
+  line-height: 1.78;
   font-weight: bold;
-  letter-spacing: 0.5px;
+  font-size: 14px;
+
+  @media (--l) {
+    font-size: 18px;
+  }
+}
+
+%h6,
+.h6 {
+  @extend %font-brown;
+  line-height: 1.13;
+  font-weight: bold;
+  font-size: 13px;
   text-transform: uppercase;
 
   @media (--l) {
-    @mixin font-size 16px, 19px;
-    letter-spacing: 0.74px;
+    font-size: 16px;
+  }
+}
+
+.label {
+  @extend %font-brown;
+  line-height: 1.13;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  @media (--l) {
+    font-size: 14px;
   }
 }
 
 /* Paragraphs */
 %p1,
 .p1 {
-  @extend %font-aktiv-grotesk;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 19px;
+  @extend %font-brown;
+  font-size: 12px;
+  line-height: 1.71;
+
   @media (--l) {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
+    font-size: 14px;
   }
 }
+
 %p2,
 .p2 {
-  @extend %font-aktiv-grotesk;
-  font-size: 14px;
+  @extend %font-brown;
+  font-size: 12px;
+  line-height: 1.5;
   font-weight: normal;
-  line-height: 19px;
+
   @media (--l) {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: normal;
-    line-height: 24px;
   }
 }
+
 %p3,
 .p3 {
-  @extend %font-aktiv-grotesk;
+  @extend %font-brown;
   font-size: 12px;
   font-weight: normal;
   line-height: 17px;
@@ -130,7 +144,7 @@ body {
 /* Blockquote */
 %bq,
 .bq {
-  @extend %font-aktiv-grotesk;
+  @extend %font-brown;
   font-size: 20px;
   line-height: 1.4;
 
@@ -241,13 +255,13 @@ body {
   font-style: italic;
 }
 .light {
-  font-weight: 100;
+  font-weight: lighter;
 }
 .medium {
   font-weight: 500;
 }
 .bold {
-  font-weight: 700;
+  font-weight: bold;
 }
 .bolder {
   font-weight: 900;

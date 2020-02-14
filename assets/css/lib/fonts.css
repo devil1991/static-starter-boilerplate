@@ -1,8 +1,67 @@
+/* @font-face {
+  font-family: 'Brown';
+  src: url('fonts/Brown-Light.eot');
+  src: local('font/Brown-Light'),
+  url('font/Brown-Light.eot?#iefix') format('embedded-opentype'),
+  url('font/Brown-Light.woff') format('woff'),
+  url('font/Brown-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 @font-face {
-  font-family: 'gotham-htf-bold';
-  src: url("{{ 'gotham-htf-bold.woff2' | asset_url }}") format('woff2'),
-       url("{{ 'gotham-htf-bold.woff' | asset_url }}") format('woff'),
-       url("{{ 'gotham-htf-bold.ttf' | asset_url }}") format('truetype');
+  font-family: 'Brown';
+  src: url('Brown-Regular.eot');
+  src: local('Brown-Regular'),
+  url('Brown-Regular.eot?#iefix') format('embedded-opentype'),
+  url('Brown-Regular.woff') format('woff'),
+  url('Brown-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+} */
+
+
+@font-face{
+  font-family: 'Brown';
+	/* font-family: "Brown Light"; */
+  font-style: normal;
+  font-weight: lighter;
+	src:url(brown-light-webfont.eot);
+	src:url(brown-light-webfont.eot?#iefix) format('embedded-opentype'),
+	url(brown-light-webfont.woff) format('woff'),
+	url(brown-light-webfont.ttf) format('truetype'),
+	url(brown-light-webfont.svg#web) format('svg')
+}
+@font-face{
+  font-family: 'Brown';
+	/* font-family:"Brown Regular"; */
+  font-style:normal;
+  font-weight: normal;
+	src:url(brown-regular-webfont.eot);
+	src:url(brown-regular-webfont.eot?#iefix) format('embedded-opentype'),
+	url(brown-regular-webfont.woff) format('woff'),
+	url(brown-regular-webfont.ttf) format('truetype'),
+	url(brown-regular-webfont.svg#web) format('svg')
+}
+@font-face{
+  font-family: 'Brown';
+	/* font-family:"Brown Bold"; */
+  font-style: normal;
+  font-weight: bold;
+	src:url(brown-bold-webfont.eot);
+	src:url(brown-bold-webfont.eot?#iefix) format('embedded-opentype'),
+	url(brown-bold-webfont.woff) format('woff'),
+	url(brown-bold-webfont.ttf) format('truetype'),
+	url(brown-bold-webfont.svg#web) format('svg')
+}
+@font-face{
+  font-family: 'Brown';
+	/* font-family: "Brown Regular Italic"; */
+  font-style:italic;
+  font-weight: normal;
+	src:url(brown-regular-italic-webfont.eot);
+	src:url(brown-regular-italic-webfont.eot?#iefix) format('embedded-opentype'),
+	url(brown-regular-italic-webfont.woff) format('woff'),
+	url(brown-regular-italic-webfont.ttf) format('truetype'),
+	url(brown-regular-italic-webfont.svg#web) format('svg')
 }

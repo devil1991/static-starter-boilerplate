@@ -1,0 +1,10 @@
+<a class="btn {{ _class }} btn-{{_type}} btn-{{ _size }}" href="{{_href}}">
+  {{#if _leftIcon}}
+    <span class="btn__right {{ _labelClass }}">{{ _leftIcon }}aaaa </span>
+  {{/if}}
+
+  <span class="btn__label {{ _labelClass }}">{{ _label }}</span>
+  {{#if _rightIcon}}
+    <span class="btn__right {{ _labelClass }}">{{ _rightIcon }}</span>
+  {{/if}}
+</a>

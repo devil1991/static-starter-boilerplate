@@ -2,7 +2,7 @@ import Global from './global'
 import init from './lib/init'
 // import AOS from 'aos'
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
   init({
     module: 'modules'
   }).mount()
