@@ -15,6 +15,10 @@ const getAllModules = () => {
 }
 
 const findFile = (id, base) => {
+  if (id[0] ===  "~") {
+    return path.resolve(id.replace('~', "node_modules/"))
+  }
+
   const parsed = path.parse(id)
   const formats = [
     '%', // full file path
