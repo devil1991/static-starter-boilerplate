@@ -240,5 +240,6 @@ gulp.task('critical', ['handlebars','postcss:prod'], function (cb) {
 });
 
 gulp.task('default', ['copy', 'handlebars', 'svgstore', 'webpack', 'postcss:dev', 'browserSync', 'watch']);
-gulp.task('prod', ['copy', 'critical', 'svgstore', 'webpack:prod', 'postcss:prod']);
+// gulp.task('prod', ['copy', 'critical', 'svgstore', 'webpack:prod', 'postcss:prod']);
+gulp.task('prod', ['copy', 'handlebars', 'svgstore', 'webpack:prod', 'postcss:prod']);
 gulp.task('test', ['w3cjs', 'a11y']);

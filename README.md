@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e0ecca70-c0f5-41f1-8bb9-7461cae792f9/deploy-status)](https://app.netlify.com/sites/tinaba-static/deploys)
-
 ### How to proceed
 
 1.  Prepare a coffee
