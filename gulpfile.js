@@ -19,6 +19,8 @@ const critical = require('critical');
 const w3cjs = require('gulp-w3cjs');
 const access = require('gulp-accessibility');
 const glob = require('glob');
+const gulpStylelint = require('gulp-stylelint');
+const plumber = require('gulp-plumber')
 
 const buildpath = {
   main: 'public/',
@@ -85,7 +87,20 @@ gulp.task('webpack:prod', function (cb) {
   });
 });
 
-gulp.task('postcss:dev', function() {
+gulp.task('lint-css', function lintCssTask() {
+  return gulp.src('modules/**/*.css')
+    .pipe(plumber())
+    .pipe(gulpStylelint({
+      reporters: [
+        {
+          formatter: 'string',
+          console: true
+        }
+      ]
+    }))
+});
+
+gulp.task('postcss:dev', ['lint-css'], function() {
   return gulp.src(stylesheets)
       .pipe(sourcemaps.init())
       .pipe(postcss())
@@ -129,7 +144,7 @@ gulp.task('svgstore', ['svgo'], function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch(['source/**/*.html', 'partials/**/*.html'], ['handlebars']);
+  gulp.watch(['source/**/*.html', 'modules/**/*.html', 'partials/**/*.html'], ['handlebars']);
   gulp.watch(['assets/css/**/*.css'], ['postcss:dev']);
   gulp.watch(['modules/**/*.css'], ['postcss:dev']);
   gulp.watch(['assets/js/**/*.js'], ['webpack']);
